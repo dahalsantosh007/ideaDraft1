@@ -1,0 +1,424 @@
+/* for main container*/
+* {
+    margin: 0; padding: 0;
+}
+html, body, #container {
+    height: 790px;
+}
+main {
+    height: 100%;
+}
+.pageSection {
+    height: 100%;
+}
+
+/* For different containers*/
+.pageSection:first-child {
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("./assets/Landing_Page.jpg") center center no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: -115px;
+}
+.pageSection:nth-child(2)	 {
+  background: linear-gradient(to bottom, #161616 11%, rgba(22, 22, 22, 0.5) 237%, rgba(22, 22, 22, 0.1) 100%);
+}  
+.pageSection:nth-child(3)	 {
+  background: rgba(236, 232, 232, 0.7);
+}
+.pageSection:nth-child(4)	 {
+  background: rgba(39, 38, 38, 0.938);
+}
+
+/* For Home page container*/
+.test {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 60% auto auto auto auto auto;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+}
+.test > div {
+  padding: 20px 0;
+  font-size: 20px;
+  font-family: Varela Round;
+}
+
+.testActive{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 60% auto auto auto auto auto;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  border: 2px solid transparent;
+  z-index:0;
+  background-color:  rgba(255, 255, 255,1);
+}
+
+.testActive > div {
+  padding: 20px 0;
+  font-size: 20px;
+  font-family: Varela Round;
+}
+
+.testActive h3{
+  color: black;
+}
+.testActive h3:hover{
+  color: #3ea09be8;
+}
+/* second container in homepage*/
+.landing-grid-container2{
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+  margin-top:8%;
+}
+
+.landing-grid-container2 > div {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.thinkDiffText{
+  margin-left: 4em;
+}
+
+a{
+  text-decoration: none;
+}
+
+h3{
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.thinkDiffHomePage {
+  font-size: 5em;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 225px;
+}  
+
+.secondText{
+  font-size: 1em;
+  font-family: Varela Round;
+  font-weight: bold;
+  color: black;
+}
+
+.signUpButtonInside{
+  border: 0;
+  color: white;
+  font-family: Varela Round;
+  border-radius: 7px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #3ea09be8;
+  width: 250px;
+  padding: 10px 55px 10px 55px;
+  box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.4), 0 10px 50px 0 rgba(0, 0, 0, 0.2);
+}
+
+.signUpButtonInside:hover {
+  -webkit-transition-duration: 0.4s;/*safari*/
+  transition-duration: 0.4s;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* container in about page*/
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header right right right'
+    'menu menu menu right right right';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 { 
+  grid-area: header;
+  margin-top: 60px;
+
+}
+
+.item2 { 
+  grid-area: menu; 
+  margin-top: 10px;
+}
+
+.item4 { 
+  grid-area: right;
+  margin-top: 125px;
+}
+
+.aboutUs{
+  font-family: sans-serif;
+  color: white; 
+  font-weight: bold;
+  font-family: Varela Round,sans-serif;
+}
+
+.headerTag{
+  font-family: Nunito,sans-serif;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: white;
+  text-align: left;
+  margin-top: 55px;
+  margin-left: 45px;
+}
+
+.secondHeaderTag{
+  font-family: Nunito,sans-serif;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: white;
+  text-align: right;
+  margin-top: 55px;
+  margin-right: 45px;
+}
+
+.phoneContact{
+  font-family: Nunito,sans-serif;
+  font-weight: lighter;
+  text-align: right;
+  font-size: 14px;
+  margin-right: 45px;
+}
+
+h6{
+  text-align: left;
+  font-family: Nunito;
+  margin-left: 20px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7)
+} 
+
+h5{
+  font-family: Nunito,sans-serif;
+  font-size: 1 rem;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: left;
+  margin-left: 45px;
+}
+
+/* for contact page*/
+.contact-grid-container{
+  display:grid;
+  grid-template-areas:
+            "photo1 photo1 article1 article1"
+            "article2 article2 photo2 photo2";
+  grid-gap:10px;
+  padding: 10px;
+}
+
+.photo1{
+  grid-area: photo1;
+  background-color:rgba(255, 255, 255, 0.7); 
+  justify-self: right;
+  margin-top: 77px;
+}
+
+.article1{
+  grid-area: article1;
+  color:rgba(255, 255, 255, 0.7); 
+  background-color: #211d1d;
+  width: 390px;
+  margin-top: 125px;
+}
+
+.article2{
+  grid-area: article2;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: #211d1d;
+  width: 390px;
+  height: 256px;
+  justify-self: self-end;
+}
+
+.photo2{
+  grid-area: photo2;
+}
+
+.servicePage-flex-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #211d1d;
+  grid-gap:10px;
+  height: 1800px;
+  grid-gap: 10px;
+}
+
+.topHeader{
+  text-align: center;
+  align-self: center;
+  color: black;
+  font-family: Nunito;
+  font-size: 15px;
+  margin-top: 155px;
+}
+
+.bottomHeader{
+  text-align: center;
+  align-self: center;
+  color: black;
+  font-family: Nunito;
+  font-size: 15px;
+  margin-bottom: 1010px;
+}
+
+.topHeader > div{
+  border: 2px solid transparent;
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  border-radius: 10px;
+  background: white;
+}
+
+.bottomHeader > div{
+  border: 2px solid transparent;
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  border-radius: 10px;
+  background: white;
+}
+
+.textBox{
+  color: black;
+  text-align: center;
+}
+
+.textBoxImp{
+  color: #3ea09be8;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.topText{
+  margin-top: 30px;
+}
+.insideText{
+  height: 158px;
+  margin-top: 30px;
+  width: 390px;
+}
+
+hr {
+  width: 100px;
+  border: none;
+  height: 4px;
+  background-color: #3ea09be8;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.newsLetterTextBox{
+  margin-top: -850px;
+  text-align: end;
+}
+
+.newsLetterSubmitButton{
+  margin-top: -850px;
+}
+
+input[type = "text"],input[type= 'password']{
+  width: 400px;
+  height: 60px;
+  border-radius: 4px;
+  border: 0;
+  font-size: 17px;
+  font-weight: lighter;
+}
+
+
+[type='submit']{
+  width: 200px;
+  height: 63px;
+  border: 0;
+  border-radius: 4px;
+  background: #3ea09be8;
+  font-size:17px;
+  color: white;
+}
+
+[type='submit']:hover{
+  background: #4ad8d1e8;
+}
+
+input::placeholder{
+  text-align: center;
+}
+
+.textInsideInput{
+  text-align: center;
+}
+
+.signUp{
+  color: white;
+  font-weight: 100;
+  font-family: Nunito;
+  margin-bottom: 100px;
+}
+
+.aeroplane{
+  margin-bottom: 102px;
+}
+
+.popup-content{
+  padding: 55px 0px !important;
+  border-radius: 6px;
+  height: 500px;
+  margin-top: 110px !important;
+  margin-left: 25% !important;
+  width: 700px !important;
+  animation-name: example;
+  animation-duration:1s;
+  animation-fill-mode: forwards;
+}
+
+.santosh{
+  margin-left: 77% !important;
+  width: 300px !important;
+  height: auto !important;
+}
+
+@keyframes example{
+  from{top:-100px;opacity: 0;}
+  to{top:0px;opacity:1}
+}
+
+input[type="text"],input[type='password'], .box{
+  border: 2px solid gray;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 95%;
+  font-family: Nunito,sans-serif;
+}
+
+.messageBox{
+  height:250px;
+  width: 95%;
+  border: 2px solid gray;
+  border-radius: 4px;
+  font-size: 17px;
+  font-family: Nunito,sans-serif;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+::placeholder,messageBox{
+  text-align: center;
+}
